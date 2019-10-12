@@ -6,21 +6,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { TopicsPage } from './topics.page';
+import { TopicsRoutingModule } from './topics-routing.module';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: TopicsPage
-  }
-];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    TopicsRoutingModule
   ],
   declarations: [TopicsPage]
 })
-export class TopicsPageModule {}
+export class TopicsPageModule { }

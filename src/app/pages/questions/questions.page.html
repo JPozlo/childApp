@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>questions</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="topics"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Questions</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h3>1.</h3>
+    <p>What is 1+1?
+    </p>
+    <ion-item>
+      <ion-label position="floating">Enter answer here(a ,b, c , d)</ion-label>
+      <ion-input ngModel name="answer" required type="text"></ion-input>
+    </ion-item>
+
+    <ion-buttons>
+      <ion-button type="submit" expand="block" color="primary" fill="outline">Submit Answer
+      </ion-button>
+    </ion-buttons>
+
+  </form>
+
 
 </ion-content>

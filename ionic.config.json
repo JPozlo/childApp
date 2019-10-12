@@ -1,6 +1,9 @@
 {
   "name": "childApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular",
   "id": "d4371385"
 }

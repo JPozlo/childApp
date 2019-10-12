@@ -1,14 +1,40 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Learn App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col>
+        <div>
+          <h3>Welcome!</h3>
+          <p>
+            This is a study app. Click start to begin or exit to close the app.
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-float-left">
+        <ion-buttons>
+          <ion-button (click)="onStart()">
+            Start
+            <ion-icon name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="ion-float-right">
+        <ion-buttons>
+          <ion-button (click)="onExit()">
+            Exit
+            <ion-icon name="exit"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
